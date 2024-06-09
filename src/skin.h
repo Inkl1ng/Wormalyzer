@@ -1,0 +1,62 @@
+#ifndef SKIN_H
+#define SKIN_H
+
+enum SkinElement
+{
+	APPROACH_CIRCLE,
+	HIT_CIRCLE,
+	HIT_CIRCLE_OVERLAY,
+	SLIDER_END_CIRCLE,
+	SLIDER_FOLLOW_CIRCLE,
+	SLIDER_BALL,
+	SLIDER_SCORE_POINT,
+	REVERSE_ARROW,
+	COMBO_0,
+	COMBO_1,
+	COMBO_2,
+	COMBO_3,
+	COMBO_4,
+	COMBO_5,
+	COMBO_6,
+	COMBO_7,
+	COMBO_8,
+	COMBO_9,
+	num_skin_elements	
+};
+
+enum HitSounds
+{
+	// drum set
+	DRUM_HIT_NORMAL,
+	DRUM_HIT_CLAP,
+	DRUM_HIT_FINISH,
+	DRUM_HIT_WHISTLE,
+	DRUM_SLIDER_TICK,
+	DRUM_SLIDER_SLIDE,
+	DRUM_SLIDER_WHISTLE,
+	// normal set
+	NORMAL_HIT_NORMAL,
+	NORMAL_HIT_CLAP,
+	NORMAL_HIT_FINISH,
+	NORMAL_HIT_WHISTLE,
+	NORMAL_SLIDER_TICK,
+	NORMAL_SLIDER_SLIDE,
+	NORMAL_SLIDER_WHISTLE,
+	// soft set
+	SOFT_HIT_NORMAL,
+	SOFT_HIT_CLAP,
+	SOFT_HIT_FINISH,
+	SOFT_HIT_WHISTLE,
+	SOFT_SLIDER_TICK,
+	SOFT_SLIDER_SLIDE,
+	SOFT_SLIDER_WHISTLE,
+	num_hit_sounds
+};
+
+void load_skin();
+
+void draw_element(int x, int y, enum SkinElement element_type);
+
+void play_sound(enum HitSound sound_type);
+
+#endif

@@ -1,0 +1,18 @@
+Basics
+	[ ] File loading
+		[x] hitcircle.png and other files
+		[x] hitsounds
+		[ ] music
+			- dependent on accessing the osu! directory
+			- need to open the .osu file and figure out which to select
+			- OR can just scan through all the files and check if there is a valid extension
+				- issue with this is that some maps have multiple audio files
+	[ ] Rendering
+		- draw the circles
+	[ ] Map parsing
+		- interpreting a .osu file
+	[ ] accessing the osu! directory
+		- have the user put the path to their osu directory in a .txt file and load from there
+		- raylib has filesystem functions that will make this much easier
+		[ ] selecting a mapset (use the mapset ID for this)
+		[ ] selecting a diff (use the [*diff name*] at the end of the filename string for this)
