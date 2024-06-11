@@ -6,6 +6,7 @@
 
 void init_app()
 {
+	SetTraceLogLevel(LOG_NONE);
 	InitWindow(1280, 720, "Wormalyzer");
 	InitAudioDevice();
 	// cap the frame rate to the max of the monitor

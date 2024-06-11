@@ -24,7 +24,7 @@ enum SkinElement
 	num_skin_elements	
 };
 
-enum HitSounds
+enum HitSound
 {
 	// drum set
 	DRUM_HIT_NORMAL,
