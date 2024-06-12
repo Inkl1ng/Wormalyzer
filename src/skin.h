@@ -1,8 +1,7 @@
 #ifndef SKIN_H
 #define SKIN_H
 
-enum SkinElement
-{
+enum skin_element {
 	APPROACH_CIRCLE,
 	HIT_CIRCLE,
 	HIT_CIRCLE_OVERLAY,
@@ -24,8 +23,7 @@ enum SkinElement
 	num_skin_elements	
 };
 
-enum HitSound
-{
+enum hit_sound {
 	// drum set
 	DRUM_HIT_NORMAL,
 	DRUM_HIT_CLAP,
@@ -55,8 +53,8 @@ enum HitSound
 
 void load_skin();
 
-void draw_element(int x, int y, enum SkinElement element_type);
+void draw_element(int x, int y, enum skin_element element_type);
 
-void play_sound(enum HitSound sound_type);
+void play_sound(enum hit_sound sound_type);
 
 #endif
